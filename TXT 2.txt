@@ -1,0 +1,218 @@
+intents:
+- greet
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- ask_weather
+- ask_howdoing
+- ask_whatspossible
+- ask_isbot
+- ask_howold
+- ask_languagesbot
+- ask_time
+- ask_wherefrom
+- ask_whoami
+- ask_whatismyname
+- ask_howbuilt
+- handleinsult
+- nicetomeetyou
+- telljoke
+- out_of_scope
+- thank
+- ask_whoisit
+- canthelp
+- feedback
+- technical_question
+- explain
+- goodbye
+- ask_builder
+- default
+- contact_email
+entities:
+- number
+templates:
+  utter_great:
+  - text: Great! 👍
+  - text: That's great! 🙌
+  - text: Awesome! 🎉
+  - text: Cool, let's do it 🚀
+  utter_thank:
+  - text: Awesome, thanks! 👍
+  - text: Sweet, thank you! 😄
+  - text: Thanks! 👌
+  - text: Cool, thank you!
+  utter_can_do:
+  - text: Sure thing!
+  - text: Can do!
+  - text: You got it. 👍
+  utter_docu:
+  - text: 'If you want some more awesome Rasa content, check out our forum: https://forum.rasa.com/'
+  utter_quickstart_nlu_only:
+  - text: "Here is a quickstart for people who only need NLU for now here: https://rasa.com/docs/nlu/quickstart/\
+      \ . You don't have to install anything to try it out."
+  utter_ask_migration:
+  - text: Are you migrating from another tool?
+  utter_switch_dialogflow:
+  - text: 'We have a guide for migrating from DialogFlow here: http://rasa.com/docs/getting-started/dialogflow/.'
+  utter_switch_luis:
+  - text: 'We have a guide for migrating from LUIS here: http://rasa.com/docs/getting-started/luis/.'
+  utter_greet:
+  - text: Hey there, welcome !!
+  utter_greet_name:
+  - text: Hi, {name}!
+  - text: Hello, {name}!
+  - text: Hey, {name}!
+  utter_greet_noname:
+  - text: Hey!
+  - text: Hi!
+  - text: Hey there!
+  utter_ask_name:
+  - text: What's your name? 😉
+  utter_contact_email:
+  - text: You can’t speak to a human directly in this chat, but you can email us at
+      bankaibot@gmail.com
+  utter_ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny ☀️
+  - text: Honestly it's a bit too hot these days 😅
+  - text: Blue skies and sunshine!
+  - text: Let's just say it hasn't rained in weeks ☀️
+  utter_ask_builder:
+  - text: The engineers of SNIST 🛠
+  - text: One of the smart engineers using Rasa! 🧠
+  utter_ask_howdoing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  utter_out_of_scope:
+  - text: Sorry, I can’t deal with that request.
+  - text: I'm sorry, I can't handle that request.
+  - text: I can't help you with that, I'm sorry.
+  - text: Every bot is not completely perfect - it seems like I can't handle that
+      request.
+  utter_ask_whoisit:
+  - text: I'm the bank enquiry bot! 🤖
+  utter_noworries:
+  - text: No worries!
+  - text: You're welcome!
+  - text: I'm happy to help.
+  utter_bye:
+  - text: Goodbye!
+  - text: Bye!
+  - text: Ciao!
+  - text: Bye, was nice talking to you!
+  utter_default:
+  - text: Sorry, I didn't get that 🤷🏻‍. Could you please rephrase?
+  - text: I didn't understand, could you rephrase that?
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you
+      just said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_feedback:
+  - text: How is this conversation going?
+    buttons:
+    - title: 👍
+      payload: /feedback{"feedback_value":"positive"}
+    - title: 👎
+      payload: /feedback{"feedback_value":"negative"}
+  utter_canthelp:
+  - text: I'm sorry I couldn't help you. If you have general questions about the Stack,
+      please head to https://forum.rasa.com/, otherwise contact us at hi@rasa.com
+      for anything else.
+  utter_thumbsup:
+  - text: 👍
+  - text: Okay.
+  - text: Got it.
+  utter_ask_isbot:
+  - text: Yep, I'm a bot!
+  utter_technical_question:
+  - text: I can't answer that.
+  utter_ask_whatspossible:
+  - text: I am here to talk to you, and help you out with banking
+  - text: I assist you to banking
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  utter_ask_howold:
+  - text: teen
+  - text: Old enough to be a bot.
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t
+      matter.
+  utter_ask_languagesbot:
+  - text: I can spell baguette in French, but unfortunately English is the only language
+      I can answer you in.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  utter_ask_time:
+  - text: It's the most wonderful time of the year!
+  utter_ask_wherefrom:
+  - text: I was born in a computer, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth.
+  utter_ask_whoami:
+  - text: I hope you are being yourself.
+  utter_handleinsult:
+  - text: That’s not very nice 😢
+  utter_nicetomeeyou:
+  - text: Thank you. It is a pleasure to meet you as well!
+  - text: It is nice to meet you too!
+  - text: Pleased to meet you too!
+  - text: Likewise!
+  utter_telljoke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: Do you know a tree’s favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can’t stand fast food.
+  utter_ask_whatismyname:
+  - text: It's probably the one that your parents chose for you.
+  utter_ask_howbuilt:
+  - text: I was built with a lot of love and patience.
+  utter_not_sure:
+  - text: Hmm, not sure what you mean...
+  utter_react_negative:
+  - text: 😢
+  utter_react_positive:
+  - text: 😍
+actions:
+- utter_greet
+- utter_greet_name
+- utter_greet_noname
+- utter_out_of_scope
+- utter_ask_name
+- utter_noworries
+- utter_bye
+- utter_thank
+- utter_great
+- utter_docu
+- utter_can_do
+- utter_canthelp
+- utter_thumbsup
+- utter_feedback
+- utter_quickstart_nlu_only
+- utter_ask_migration
+- utter_switch_dialogflow
+- utter_switch_luis
+- utter_technical_question
+- utter_anything_else
+- utter_ask_weather
+- utter_ask_builder
+- utter_ask_howdoing
+- utter_ask_whoisit
+- utter_ask_isbot
+- utter_ask_howold
+- utter_ask_languagesbot
+- utter_ask_time
+- utter_ask_wherefrom
+- utter_ask_whoami
+- utter_handleinsult
+- utter_nicetomeeyou
+- utter_telljoke
+- utter_ask_whatismyname
+- utter_ask_howbuilt
+- utter_ask_whatspossible
+- utter_not_sure
+- utter_react_positive
+- utter_react_negative
+- utter_goodbye
+- utter_cheer_up
+- utter_happy
+- utter_did_that_help
+- utter_default
+- utter_contact_email

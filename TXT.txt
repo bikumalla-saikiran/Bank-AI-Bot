@@ -1,0 +1,40 @@
+faceboook token: EAAqNs3NEiHIBADk0X8QRTkr7rO9DvzhZAIfjjV0tXRVZCM4yZAnynDWJDbDKNZAZBDGBA6lcLZAs68Kpgb3jGKpjTJZBQQhL7WHSfJ5EwRLFicgLmdPJwIkafwVMBTL5H0sfUi8alWZAhny2bocH0EhUJN5RbzUOquneLGcTde3CrV5tAE4RK13r
+app secret: b4590fd4cbe5e7ca0ffd0d8448566e84
+app id: 2970551639640178
+
+
+
+## intent:affirm
+- yes
+- indeed
+- of course
+- that sounds good
+- correct
+- thanks
+- thanks a lot
+- yes thanks a lot
+- yes it helped a lot..thanks
+- yes it did,thanks a lot
+- yup thanks
+- yes thanks
+- yes it did
+- its ok
+
+
+## intent:mood_unhappy
+- sad
+- very sad
+- unhappy
+- bad
+- very bad
+- awful
+- terrible
+- not very good
+- extremely sad
+- so sad
+
+
+
+
+
+
